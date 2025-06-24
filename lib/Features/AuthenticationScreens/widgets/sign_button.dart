@@ -1,10 +1,30 @@
+import 'package:acaste/Features/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignButton extends StatelessWidget {
-  const SignButton({super.key});
-
+  const SignButton({super.key, required this.btnName});
+  final String btnName;
   @override
   Widget build(BuildContext context) {
-    return Container();
+    final size = MediaQuery.sizeOf(context);
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      alignment: Alignment.center,
+      height: size.height / 16,
+      width: size.width,
+      decoration: BoxDecoration(
+        color: Palette.primaryColor,
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: Text(
+        btnName,
+        style: GoogleFonts.poppins(
+          fontSize: 18,
+          fontWeight: FontWeight.w500,
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 }

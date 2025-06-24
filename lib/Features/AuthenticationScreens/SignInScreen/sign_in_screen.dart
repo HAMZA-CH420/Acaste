@@ -1,8 +1,11 @@
 import 'package:acaste/Features/AuthenticationScreens/widgets/auth_banner.dart';
 import 'package:acaste/Features/AuthenticationScreens/widgets/custom_text_field.dart';
+import 'package:acaste/Features/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../widgets/sign_button.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
@@ -17,38 +20,63 @@ class SignInScreen extends StatelessWidget {
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              spacing: 8,
-              children: [
-                Align(
-                  alignment: Alignment.center,
-                  child: Image.asset(
-                    "assets/logo/logo2.png",
-                    height: 115,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                spacing: 8,
+                children: [
+                  Align(
+                    alignment: Alignment.center,
+                    child: Image.asset(
+                      "assets/logo/logo2.png",
+                      height: 115,
+                    ),
                   ),
-                ),
-                AuthBanner(),
-                SizedBox(
-                  height: 10,
-                ),
-                CustomTextField(
-                  hintText: "Email",
-                  icon: CupertinoIcons.mail,
-                ),
-                CustomTextField(
-                  hintText: "Password",
-                  icon: CupertinoIcons.lock,
-                ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Text(
-                    "Forgot Password?",
-                    style: GoogleFonts.poppins(
-                        fontSize: 15, color: Colors.grey.shade500),
+                  AuthBanner(),
+                  SizedBox(
+                    height: 10,
                   ),
-                ),
-              ],
+                  CustomTextField(
+                    hintText: "Email",
+                    icon: CupertinoIcons.mail,
+                  ),
+                  CustomTextField(
+                    hintText: "Password",
+                    icon: CupertinoIcons.lock,
+                  ),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      "Forgot Password?",
+                      style: GoogleFonts.poppins(
+                          fontSize: 15, color: Colors.grey.shade500),
+                    ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.sizeOf(context).height / 3,
+                  ),
+                  SignButton(
+                    btnName: "Sign In",
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Don't Have An Account? ",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600, fontSize: 15),
+                      ),
+                      Text(
+                        "SignUp",
+                        style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 15,
+                            color: Palette.primaryColor),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),
