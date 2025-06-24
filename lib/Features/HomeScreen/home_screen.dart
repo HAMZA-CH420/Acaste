@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
         title: Text("HomeScreen"),
         centerTitle: true,
       ),
+      body: Image.asset("assets/logo/logo2.png"),
     );
   }
 }
