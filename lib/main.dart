@@ -1,4 +1,4 @@
-import 'package:acaste/Features/HomeScreen/home_screen.dart';
+import 'package:acaste/Features/SplashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
