@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../SignUpScreens/select_role_screen.dart';
 import '../widgets/sign_button.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -66,12 +67,21 @@ class SignInScreen extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontWeight: FontWeight.w600, fontSize: 15),
                       ),
-                      Text(
-                        "SignUp",
-                        style: GoogleFonts.poppins(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 15,
-                            color: Palette.primaryColor),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => SelectRoleScreen(),
+                              ));
+                        },
+                        child: Text(
+                          "SignUp",
+                          style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 15,
+                              color: Palette.primaryColor),
+                        ),
                       ),
                     ],
                   ),
