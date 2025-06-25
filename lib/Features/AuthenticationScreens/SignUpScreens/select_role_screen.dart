@@ -7,23 +7,30 @@ class SelectRoleScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        spacing: 35,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Align(
-            alignment: Alignment.center,
-            child: Image.asset(
-              "assets/logo/logo2.png",
-              height: 115,
-            ),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            spacing: 35,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Align(
+                alignment: Alignment.center,
+                child: Image.asset(
+                  "assets/logo/logo2.png",
+                  height: 115,
+                ),
+              ),
+              Text(
+                "Create Account",
+                style: GoogleFonts.poppins(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
+              )
+            ],
           ),
-          Text(
-            "Create account",
-            style:
-                GoogleFonts.poppins(fontSize: 20, fontWeight: FontWeight.w600,),
-          )
-        ],
+        ),
       ),
     );
   }
