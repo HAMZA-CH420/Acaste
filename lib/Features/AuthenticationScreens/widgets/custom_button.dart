@@ -1,3 +1,4 @@
+import 'package:acaste/Features/AuthenticationScreens/SignUpScreens/address_screen.dart';
 import 'package:acaste/Features/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -19,6 +20,14 @@ class _CustomButtonState extends State<CustomButton> {
       onTap: () {
         setState(() {
           onTap = !onTap;
+          Future.delayed(
+            Duration(milliseconds: 800),
+            () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AddressScreen(),
+                )),
+          );
         });
       },
       child: Container(

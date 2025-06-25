@@ -1,9 +1,8 @@
-import 'package:acaste/Features/AuthenticationScreens/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SelectRoleScreen extends StatelessWidget {
-  const SelectRoleScreen({super.key});
+class AddressScreen extends StatelessWidget {
+  const AddressScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,17 +31,6 @@ class SelectRoleScreen extends StatelessWidget {
               SizedBox(
                 height: MediaQuery.sizeOf(context).height / 14,
               ),
-              Column(
-                spacing: 15,
-                children: [
-                  CustomButton(
-                    btnName: "User",
-                  ),
-                  CustomButton(
-                    btnName: "Provider",
-                  ),
-                ],
-              )
             ],
           ),
         ),
