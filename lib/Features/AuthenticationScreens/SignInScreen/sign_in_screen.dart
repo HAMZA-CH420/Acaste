@@ -44,6 +44,7 @@ class SignInScreen extends StatelessWidget {
                   CustomTextField(
                     hintText: "Password",
                     icon: CupertinoIcons.lock,
+                    isPassword: true,
                   ),
                   Align(
                     alignment: Alignment.centerRight,
