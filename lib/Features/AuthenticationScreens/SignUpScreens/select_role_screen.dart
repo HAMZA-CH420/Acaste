@@ -1,3 +1,4 @@
+import 'package:acaste/Features/AuthenticationScreens/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -27,6 +28,20 @@ class SelectRoleScreen extends StatelessWidget {
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                 ),
+              ),
+              SizedBox(
+                height: MediaQuery.sizeOf(context).height / 14,
+              ),
+              Column(
+                spacing: 10,
+                children: [
+                  CustomButton(
+                    btnName: "User",
+                  ),
+                  CustomButton(
+                    btnName: "Provider",
+                  ),
+                ],
               )
             ],
           ),
