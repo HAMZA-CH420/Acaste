@@ -1,3 +1,4 @@
+import 'package:acaste/Features/AuthenticationScreens/SignUpScreens/upload_photo_screen.dart';
 import 'package:acaste/Features/AuthenticationScreens/widgets/custom_text_field.dart';
 import 'package:acaste/Features/AuthenticationScreens/widgets/sign_button.dart';
 import 'package:flutter/cupertino.dart';
@@ -66,7 +67,13 @@ class UserDataScreen extends StatelessWidget {
                 ),
                 SignButton(
                   btnName: "Next",
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => UploadPhotoScreen(),
+                        ));
+                  },
                 ),
               ],
             ),
