@@ -39,11 +39,12 @@ class UploadPhotoScreen extends StatelessWidget {
                 SignButton(
                   btnName: "Next",
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => SignInScreen(),
-                        ));
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SignInScreen()),
+                      (Route<dynamic> route) => false,
+                    );
                   },
                 ),
               ],
