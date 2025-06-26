@@ -3,8 +3,8 @@ import 'package:acaste/Features/AuthenticationScreens/widgets/sign_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AddressScreen extends StatelessWidget {
-  const AddressScreen({super.key});
+class UserDataScreen extends StatelessWidget {
+  const UserDataScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

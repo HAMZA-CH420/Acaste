@@ -18,7 +18,7 @@ class SignButton extends StatelessWidget {
         width: size.width,
         decoration: BoxDecoration(
           color: Palette.primaryColor,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(13),
         ),
         child: Text(
           btnName,
