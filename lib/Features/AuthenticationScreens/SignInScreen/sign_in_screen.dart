@@ -59,6 +59,7 @@ class SignInScreen extends StatelessWidget {
                   ),
                   SignButton(
                     btnName: "Sign In",
+                    onTap: () {},
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
