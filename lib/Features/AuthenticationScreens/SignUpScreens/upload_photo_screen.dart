@@ -39,7 +39,7 @@ class UploadPhotoScreen extends StatelessWidget {
                 SignButton(
                   btnName: "Next",
                   onTap: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                         context,
                         MaterialPageRoute(
                           builder: (context) => SignInScreen(),
