@@ -21,7 +21,7 @@ class _CustomButtonState extends State<CustomButton> {
         setState(() {
           onTap = !onTap;
           Future.delayed(
-            Duration(milliseconds: 800),
+            Duration(milliseconds: 600),
             () => Navigator.push(
                 context,
                 MaterialPageRoute(

@@ -1,4 +1,5 @@
 import 'package:acaste/Features/AuthenticationScreens/widgets/custom_text_field.dart';
+import 'package:acaste/Features/AuthenticationScreens/widgets/sign_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -30,18 +31,21 @@ class AddressScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: MediaQuery.sizeOf(context).height / 14,
+                height: 20,
               ),
               Column(
+                spacing: 8,
                 children: [
                   CustomTextField(
                       hintText: "Street Address",
                       icon: Icons.location_on_outlined),
-                  CustomTextField(
-                      hintText: "Zip Code", icon: Icons.location_on_outlined),
-                  CustomTextField(
-                      hintText: "State", icon: Icons.location_on_outlined),
+                  CustomTextField(hintText: "Zip Code", icon: Icons.newspaper),
+                  CustomTextField(hintText: "State", icon: Icons.location_city),
                 ],
+              ),
+              SignButton(
+                btnName: "Next",
+                onTap: () {},
               ),
             ],
           ),
