@@ -1,5 +1,6 @@
 import 'package:acaste/Features/AuthenticationScreens/widgets/auth_banner.dart';
 import 'package:acaste/Features/AuthenticationScreens/widgets/custom_text_field.dart';
+import 'package:acaste/Features/BottomNavBar/bottom_nav_bar.dart';
 import 'package:acaste/Features/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,13 @@ class SignInScreen extends StatelessWidget {
                   ),
                   SignButton(
                     btnName: "Sign In",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => BottomNavBar(),
+                          ));
+                    },
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
