@@ -15,8 +15,15 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: IndexedStack(
+        index: currentIndex,
+      ),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (value) {
+          setState(() {
+            currentIndex = value;
+          });
+        },
         currentIndex: currentIndex,
         elevation: 0,
         iconSize: 30,
