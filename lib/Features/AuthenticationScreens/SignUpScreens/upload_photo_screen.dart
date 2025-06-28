@@ -1,6 +1,6 @@
 import 'package:acaste/Features/AuthenticationScreens/SignInScreen/sign_in_screen.dart';
 import 'package:acaste/Features/AuthenticationScreens/widgets/sign_button.dart';
-import 'package:acaste/Features/UiHelpers/ColorPalette/color_palette.dart';
+import 'package:acaste/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
