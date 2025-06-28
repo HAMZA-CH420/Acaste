@@ -1,4 +1,4 @@
-import 'package:acaste/Features/UiHelpers/ColorPalette/color_palette.dart';
+import 'package:acaste/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
