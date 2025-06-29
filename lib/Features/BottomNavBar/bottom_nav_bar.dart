@@ -1,3 +1,8 @@
+import 'package:acaste/Features/AppointmentScreen/appointment_screen.dart';
+import 'package:acaste/Features/BlogScreen/blog_screen.dart';
+import 'package:acaste/Features/HomeScreen/home_screen.dart';
+import 'package:acaste/Features/NotificationScreen/notification_screen.dart';
+import 'package:acaste/Features/ProviderDetailScreen/provider_detail_screen.dart';
 import 'package:acaste/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +17,13 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex = 0;
-  final List<Widget> screens = [];
+  final List<Widget> screens = [
+    HomeScreen(),
+    AppointmentScreen(),
+    BlogScreen(),
+    NotificationScreen(),
+    ProviderDetailScreen(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
