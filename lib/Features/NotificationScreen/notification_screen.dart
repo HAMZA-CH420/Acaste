@@ -1,4 +1,6 @@
+import 'package:acaste/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
@@ -7,8 +9,15 @@ class NotificationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notification Screen'),
+        title: Text(
+          "Notifications",
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
+        backgroundColor: Palette.primaryColor,
       ),
     );
   }
