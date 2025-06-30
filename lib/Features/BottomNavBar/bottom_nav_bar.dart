@@ -29,6 +29,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     return Scaffold(
       body: IndexedStack(
         index: currentIndex,
+        children: screens,
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (value) {
