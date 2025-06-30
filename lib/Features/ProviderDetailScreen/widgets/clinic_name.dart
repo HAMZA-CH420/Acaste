@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ClinicName extends StatelessWidget {
-  const ClinicName({super.key});
-
+  const ClinicName(
+      {super.key, required this.clinicName, required this.address});
+  final String clinicName;
+  final String address;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -13,7 +15,7 @@ class ClinicName extends StatelessWidget {
           spacing: 30,
           children: [
             Text(
-              "Washington Clinic",
+              clinicName,
               style: GoogleFonts.poppins(
                 fontWeight: FontWeight.w600,
                 fontSize: 20,
@@ -29,7 +31,7 @@ class ClinicName extends StatelessWidget {
           ],
         ),
         Text(
-          "Washington Dc, St 101",
+          address,
           style: GoogleFonts.poppins(
             fontSize: 14,
             fontWeight: FontWeight.w400,

@@ -24,7 +24,10 @@ class ProviderDetailScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: Column(
           children: [
-            ClinicName(),
+            ClinicName(
+              clinicName: 'Washington Clinic',
+              address: 'Washington Dc, St 101',
+            ),
           ],
         ),
       ),
