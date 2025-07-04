@@ -68,7 +68,7 @@ class NotificationScreen extends StatelessWidget {
                 NotificationWidget(
                   notificationData: 'You have received new rating from',
                   sender: 'Charles May',
-                  timeOfReceiving: '8:12 pm',
+                  timeOfReceiving: '8:15 pm',
                 ),
                 NotificationWidget(
                   notificationData: 'You have received new rating from',
