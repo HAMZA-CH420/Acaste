@@ -1,3 +1,4 @@
+import 'package:acaste/Features/BlogScreen/widgets/updates.dart';
 import 'package:acaste/UiHelpers/ColorPalette/color_palette.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,6 +19,17 @@ class BlogScreen extends StatelessWidget {
         ),
         centerTitle: true,
         backgroundColor: Palette.primaryColor,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 15,
+          vertical: 10,
+        ),
+        child: Column(
+          children: [
+            Updates(),
+          ],
+        ),
       ),
     );
   }
