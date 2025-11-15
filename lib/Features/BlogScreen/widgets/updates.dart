@@ -2,8 +2,34 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Updates extends StatelessWidget {
+class Updates extends StatefulWidget {
   const Updates({super.key});
+
+  @override
+  State<Updates> createState() => _UpdatesState();
+}
+
+class _UpdatesState extends State<Updates> {
+  final List<Map<String, dynamic>> updates = [
+    {
+      "authorName": "HamzaCh",
+      "title": "Virus",
+      "subtitle": "How corona virus is going to impact you next trip",
+      "titleBackground": "blogImage1.jpg"
+    },
+    {
+      "authorName": "ShoaibCh",
+      "title": "Rising Talent",
+      "subtitle": "Apple Watch Series 5: Finally, always on",
+      "titleBackground": "blogImage2.jpg"
+    },
+    {
+      "authorName": "UsmanCh",
+      "title": "Rising Talent",
+      "subtitle": "Apple Watch Series 5: Finally, always on",
+      "titleBackground": "blogImage2.jpg"
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
