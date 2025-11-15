@@ -63,11 +63,18 @@ class _UpdatesState extends State<Updates> {
     return Stack(children: [
       Container(
         margin: EdgeInsets.only(right: 15),
-        padding: EdgeInsets.symmetric(horizontal: 22, vertical: 15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
           image: DecorationImage(
               image: AssetImage("assets/images/$image"), fit: BoxFit.cover),
+        ),
+      ),
+      Container(
+        margin: EdgeInsets.only(right: 15),
+        padding: EdgeInsets.symmetric(horizontal: 22, vertical: 15),
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(0.35),
+          borderRadius: BorderRadius.circular(15),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
