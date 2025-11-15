@@ -101,7 +101,7 @@ class _UpdatesState extends State<Updates> {
                   authorName,
                   style: GoogleFonts.poppins(
                     fontSize: 15,
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w500,
                     color: Colors.white,
                   ),
                 )

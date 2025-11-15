@@ -26,8 +26,26 @@ class BlogScreen extends StatelessWidget {
           vertical: 10,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          spacing: 18,
           children: [
             Updates(),
+            Text(
+              "Industry News",
+              style: GoogleFonts.poppins(
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                color: Colors.black54,
+              ),
+            ),
+            Text(
+              " TRENDING",
+              style: GoogleFonts.poppins(
+                fontSize: 17,
+                fontWeight: FontWeight.w500,
+                color: Color(0XFFFD6B3F),
+              ),
+            ),
           ],
         ),
       ),
